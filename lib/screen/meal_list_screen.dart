@@ -63,7 +63,7 @@ class MealItem extends StatelessWidget {
                     child: Center(
                       child: Text(
                         meal.title,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w900,
                         ),
@@ -76,10 +76,10 @@ class MealItem extends StatelessWidget {
           ),
           Row(
             children: [
-              ListTile(
-                leading: Icon(Icons.timer),
-                title: Text(meal.duration.toString()),
-              ),
+              // ListTile(
+              //   leading: Icon(Icons.timer),
+              //   title: Text(meal.duration.toString()),
+              // ),
             ],
           ),
         ],

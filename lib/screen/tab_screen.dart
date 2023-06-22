@@ -28,7 +28,7 @@ class _TabScreenState extends State<TabScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(pages[currentIndex]["title"]),
-        leading: Icon(Icons.menu),
+        // leading: Icon(Icons.menu),
       ),
       body: pages[currentIndex]["page"] as Widget,
       bottomNavigationBar: BottomNavigationBar(
@@ -52,7 +52,7 @@ class _TabScreenState extends State<TabScreen> {
           ),
         ],
       ),
-      drawer: const MainDrawer(),
+      drawer: MainDrawer(),
     );
   }
 }
