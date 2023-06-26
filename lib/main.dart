@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'model/meal.dart';
 import 'screen/tab_screen.dart';
+import 'model/meal_data.dart' as data;
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +15,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  List<Meal> dummyMeals = data.dummyMeals;
+  List<Meal> favouriteMeals = [];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,7 +37,10 @@ class _MyAppState extends State<MyApp> {
           secondary: Colors.blue,
         ),
       ),
-      home: const TabScreen(),
+      home: TabScreen(),
+      // routes: {
+      //   TabScreen.routeName: (context) => TabScreen(),
+      // },
       debugShowCheckedModeBanner: false,
     );
   }

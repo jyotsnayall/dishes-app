@@ -4,6 +4,10 @@ import 'categories_screen.dart';
 import 'favourites_screen.dart';
 
 class TabScreen extends StatefulWidget {
+  static const routeName = "HomeScreen";
+  // final List<Meal> dummyMeals;
+  // final List<Meal> favouriteMeals;
+  // const TabScreen(this.dummyMeals, this.favouriteMeals, {super.key});
   const TabScreen({super.key});
 
   @override

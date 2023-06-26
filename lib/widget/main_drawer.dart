@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../screen/settings_screen.dart';
+import '../screen/tab_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({super.key});
@@ -18,7 +20,8 @@ class MainDrawer extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.w900,
                   fontSize: 30,
-                  color: Theme.of(context).primaryColor,
+                  // color: Theme.of(context).primaryColor,
+                  color: Colors.white,
                 ),
               ),
             ),
@@ -30,7 +33,11 @@ class MainDrawer extends StatelessWidget {
               style: Theme.of(context).textTheme.titleLarge,
             ),
             onTap: () {
-              print("meal");
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) => TabScreen(),
+                ),
+              );
             },
           ),
           ListTile(
@@ -40,7 +47,11 @@ class MainDrawer extends StatelessWidget {
               style: Theme.of(context).textTheme.titleLarge,
             ),
             onTap: () {
-              print("settings");
+               Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) => FilterMeals(),
+                ),
+              );
             },
           ),
         ],
