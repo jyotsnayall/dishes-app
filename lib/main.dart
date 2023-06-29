@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> {
           secondary: Colors.blue,
         ),
       ),
-      home: TabScreen(),
+      home: const TabScreen(),
       // routes: {
       //   TabScreen.routeName: (context) => TabScreen(),
       // },
